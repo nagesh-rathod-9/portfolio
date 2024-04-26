@@ -157,7 +157,7 @@ header .navigation a{
 }
 
 header .navigation a:hover{
-  color: #8e44ad;
+  color: #1aaedb;
 }
 
 header.sticky .navigation a:hover{
@@ -718,3 +718,34 @@ body{
   opacity: 1;
 }
       
+.card-img{
+  position: relative;
+
+}
+.card_img_inner{
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #090909ca;
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 100px 20px;
+  
+}
+.card_img_inner:hover{
+  opacity: 1;
+}
+
+.card_img_inner:hover .card-img  img{
+  scale: 1.2;
+}
+.click_btn{
+  height: 40px;
+  margin-left: 30%;
+  cursor: pointer;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  width: 90px;
+  background-color: rgb(110, 214, 235);;
+}
